@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    color: white;
+}
+nav{
+    display: flex;
+    padding: 22px;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    background-color: rgb(63, 62, 62);
+    z-index: 999;
+}
+nav ul{
+    align-items: center;
+    display: flex;
+    /* margin: 10px; */
+}
+ul li{
+    margin-inline: 10px;
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s ease;
+    /* transition: all ease 0.5sec; */
+}
+ul li a:hover{
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   i{
+    margin-inline: 18px;
+    font-size: 20px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;    
+   }  
+}
+.icons i:hover{
+    
+    background-color: #ff6600;
+    transition: width 0.3s ease-in-out;
+}
+
+.logo h1{
+    font-size: 30px;
+    color: white;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    background: url(image8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 44px;
+    padding-top: 100px;
+    margin-top: 80px;
+}
+.maintext{
+    margin-top: 73px;
+}
+.maintext h1{
+    font-size: 50px;
+}
+
+.maintext h3{
+    font-size: 30px;
+    margin-top: 12px;
+}
+.maintext p{
+    margin-top: 22px;
+}
+.maintext button{
+    font-size: 20px;
+    width: 140px;
+    height: 36px;
+    border: 2px solid rgb(8, 212, 8);
+    color: white;
+    background-color: transparent;
+    margin-top: 22px;
+    transition: all ease 0.5s;
+}
+
+.maintext button:hover{
+    background-color: rgb(4, 152, 4);
+    cursor: pointer;
+
+}
+
+main h1 span{
+    color: rgb(7, 231, 7);
+}
+.logo span,
+.main span,
+.head span{
+    color: orangered;
+}
+.cards{
+    display: grid;
+    justify-content: center;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
+    margin: auto;
+}
+.cards .crd{
+    margin-inline: 22px;
+    background-color: #fff;
+    margin-top: 42px;
+    width: 320px;
+    height: 670px;
+    
+
+}
+.crd:hover{
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
+}
+.crd h3{
+    margin-top: 10px;
+    margin-left: 11px;
+}
+
+.crd p{
+    padding: 10px;
+}
+
+.crd button{
+    width: 90px;
+    height: 29px;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin-left: 11px;
+    margin-top: 11px;
+}
+
+.crd button:hover{
+    background-color: transparent;
+    border: 2px solid orangered;
+    color: black;
+    cursor: pointer;
+}
+.cards .crd img {
+    width: 100%;
+    height: 200px;
+}
+.head{
+    text-align: center;
+    padding: 90px;
+    font-size: 28px;
+}
+/* .theme-toggle{
+    display: flex;
+    margin-top: 10px;
+    size: 20px;
+} */
+
+.review{
+    width: 800px;
+    height: 250px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid rgb(179, 179, 179);
+}
+.review .slide{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 1s ease;
+    text-align: center;
+    background-color: #fff;
+}
+
+.slide img{
+    border-radius: 50%;
+    width: 25%;
+    height: 50%;
+    margin-top: 11px;
+}
+.slide p {
+    padding: 30px;
+}
+.blogcard img{
+    width: 100%;
+    border-radius: 4px;
+}
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.blogcard{
+    width: 300px;
+    height: 410px;
+    background-color: rgb(99, 99, 99);
+    padding: 11px;
+    margin-inline: 22px;
+    color: white;
+    margin-top: 22px;
+}
+.blogcard h3{
+    margin-top: 11px;
+}
+.blogcard p{
+    margin-top: 8px;
+}
+.blogcard a{
+    position: absolute;
+    margin-top: 11px;
+    padding: 4px;
+    text-decoration: none;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 54px;
+    margin-top: 83px;
+}
+.text p{
+    margin-top: 11px;
+
+}
+
+.end{
+    border-top: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #888;
+    border-radius: 5px;
+
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #555;
+
+
+}
+.theme-toggle i{
+    font-size: 20px;
+ margin-left: 10px;
+}
+
+.theme-toggle i:active{
+    color: orangered;
+
+}
+body.light{
+    background-color: #fff;
+    color: black;
+
+}
+body.dark{
+    background-color: #333;
+    color: black;
+}
+
+
+@media only screen and (max-width:840px){
+    nav ul{
+        display: none;
+        }
+        #bar{
+            display: block;
+        }
+        .showitem{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            top: 75px;
+            background-color: rgb(153, 153, 153);
+            color: rgb(109, 106, 106);
+            width: 100%;
+            height: 200px;
+            margin-left: -8%;
+            gap: 22px;
+        }
+        .main{
+            display: block;
+            text-align: center;
+        
+        }
+        .cards .crd{
+            width: 90%;
+            margin: auto;
+            margin-top: 22px;
+        }
+        .review{
+            width: 90%;
+        }
+        .slide img{
+            height: 100px;
+        }
+        .slide p{
+            margin-top: -21px;
+        }
+        .icons i{
+            margin-inline: 4px ;
+        }
+        .icons{
+            margin-right: 11px;
+        }
+
+    }
+
+@media only screen and(max-width:760px){
+.cards .crd{
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+
+}
+
+}
+
+@media only screen and(max-width:650px){
+    .main img{
+        width: 90%;
+    }    
+    }
+
+
+@media only screen and(max-width:550px){
+    .main h1{
+        font-size: 30px;
+
+    }
+    .main h3{
+        font-size: 32px;
+        
+    }
+    
+    }
